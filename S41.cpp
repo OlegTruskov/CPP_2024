@@ -4,17 +4,17 @@ using namespace std;
 int squared_sum(double a, double b)
 {
     double c;
-    c = (a + b)*(a+b);
+           c = (a + b)*(a+b);
     return c;
 }
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    double a, b;
+       double a, b;
 cout << "Введите первое число: ";
-cin >> a;
+          cin >> a;
 cout << "Введите второе число: ";
-cin >> b;
+          cin >> b;
 cout << "Квадрат суммы чисел равен: " << squared_sum(a, b);
 return 0;
 }
