@@ -1,12 +1,26 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
-      int a = 13, b = 3; // Задаем переменные
-    cout << "a = " << a << endl << "b = " << b << endl;
-            int c = a / b; // Делим нацело
-            int d = a % b; // Находим остаток от деления
-    cout << "Результат деления нацело: " << c << endl << "Остаток от деления: " << d;
-return 0;
+
+    // Задаем переменные
+    int a = 13, b = 3;
+
+    // Выводим исходные значения
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    // Делим нацело
+    int c = a / b;
+
+    // Находим остаток от деления
+    int d = a % b;
+
+    // Выводим результаты
+    cout << "Результат деления нацело: " << c << endl;
+    cout << "Остаток от деления: " << d << endl;
+
+    return 0;
 }
