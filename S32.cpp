@@ -12,9 +12,11 @@ int main() {
 
     int length;
     length = strlen(word);
-
+    
+    char* ptr = word;
+    
     for (int i = 0; i < length; i++) {
-        word[i]++;
+        *ptr++;
     }
 
     cout << word << endl;
