@@ -1,17 +1,30 @@
 #include <iostream>
-#include <string>
-
+#include <cstring>
 using namespace std;
 
-int main() {
-    setlocale(LC_ALL, "Russian");
-    string word;
-    cout << "Введите слово: ";
-    cin >> word;
+void reverse(char *str) {
+    
+    int n = strlen(str);
+    char str1[n];       
+            int i = n-1;
+            int j = 0;
+            while (i >= 0)
+            {
 
-    for (int i = word.size() - 1; i >= 0; i--) {
-        cout << word[i];
-    }
+                str1[j] = str[i];
+                --i;
+                cout << str1[j];
+                j++;
+                    
+            }
+}
+ 
+int main()
+{
+    char str[50];
+    cin >> str;
 
-    return 0;
+    reverse(str);
+     
+return 0;
 }
