@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
 
 float get_angle(float a, float b, float c) {
